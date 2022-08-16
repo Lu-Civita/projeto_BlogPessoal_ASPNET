@@ -26,6 +26,7 @@ namespace BlogAPI.Src.Modelos
 
         [ForeignKey("fk_usuario")]
         public Usuario Criador { get; set; }
+
         [ForeignKey("fk_tema")]
         public Tema Tema { get; set; }
 

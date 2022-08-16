@@ -2,12 +2,12 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
+using BlogAPI.Src.Utilidades;
 
 namespace BlogAPI.Src.Modelos
 {
-   /// <summary>
-    /// <para>Resumo: Classe responsavel por representar tb_usuarios no banco.
-    ///</para>
+    /// <summary>
+    /// <para>Resumo: Classe responsavel por representar tb_usuarios no banco.</para>
     /// <para>Criado por: Generation</para>
     /// <para>Versão: 1.0</para>
     /// <para>Data: 17/07/2022</para>
@@ -28,6 +28,9 @@ namespace BlogAPI.Src.Modelos
         public string Senha { get; set; }
 
         public string Foto { get; set; }
+
+        [Required]
+        public TipoUsuario Tipo { get; set; }
 
         [JsonIgnore, InverseProperty("Criador")]
         public List<Postagem> MinhasPostagens { get; set; }
