@@ -8,6 +8,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BlogAPI.Src.Repositorios.Implentacoes
 {
+    /// <summary>
+    /// <para>Resumo: Classe responsavel por implementar IUsuario</para>
+    /// <para>Criado por: Generation</para>
+    /// /// <para>Versão: 1.0</para>
+    /// <para>Data: 12/05/2022</para>
+    /// </summary>
     public class UsuarioRepositorio : IUsuario
     {
         #region Atributos
